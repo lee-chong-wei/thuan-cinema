@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  cinema-web:
+    container_name: cinema-web
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./cinema:/var/www/html
+      - ./dockers/nginx/site.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - cinema-php
+  cinema-php:
+    container_name: cinema-php
+    build: dockers/php
+    volumes:
+      - ./cinema:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - cinema-db
+  cinema-phpmyadmin:
+    container_name: cinema-phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_HOST=cinema-db
+    depends_on:
+      - cinema-db
+    ports:
+      - 8081:80
+  cinema-db:
+    container_name: cinema-db
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+    volumes:
+      - ./data:/var/lib/mysql
