@@ -137,7 +137,7 @@
           </div>
           <div class="col-lg-12">
             <a href="/Galaxy_cinema/">
-              <img src="<?= site_url('/assets/img/galaxy-logo-footer.png') ?>">
+              <img src="http://localhost/Galaxy_cinema/assets/img/galaxy-logo-footer.png">
             </a>
             <div class="copyright">
               <p>Công Ty Cổ Phần Phim Thiên Ngân,Tầng 5, Toà Nhà Mặt Trời Sông Hồng, 23 Phan Chu Trinh, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>

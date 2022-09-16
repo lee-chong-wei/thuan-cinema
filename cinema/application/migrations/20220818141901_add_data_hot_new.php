@@ -7,7 +7,7 @@ class Migration_Add_data_hot_new extends CI_Migration {
     {
         $data = array(
             'title' => 'Thor & Love THunder',
-            'image' => '/assets/img/hotnew.png',
+            'image' => 'http://localhost/Galaxy_cinema/assets/img/hotnew.png',
             'link' => '/Galaxy_cinema/Thor_Thunder',
             'start_time' => '2022-07-22',
             'end_time' => '2022-09-12'

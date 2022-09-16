@@ -720,4 +720,50 @@
         .col-lg-12 {
           width: 100%;
         }
+        /* Login Controller */
+        .Login-controller .sub-text{
+          font-size: 14px;
+          line-height: 20px;
+          color: #a49d9d;
+        }
+        .Login-controller input{
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .Login-controller a{
+          color: #f26b38;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+        }
+      
+        .Login-controller .tab-content .btn{
+          color: #ffffff;
+          width: 100%;
+          font-size: 28px;
+          line-height: 30px;
+          background-color: #f26b38;
+          margin-top: 10px;
+        }
+        .Login-controller .col-md-6 input{
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+        #Login li button {
+          font-weight: 500;
+          position: relative;
+          text-decoration: none;
+          color: #a49d9d;
+          font-size: 28px;
+          line-height: 30px;
+        }
+        #Login li button:hover {
+          color: #f26b38;
+        }
+        
+        
+
 /*# sourceMappingURL=bootstrap-utilities.min.css.map */

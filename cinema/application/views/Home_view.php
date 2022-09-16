@@ -1,6 +1,7 @@
 <!-- Load Header -->
 <?php $this->load->view('Header'); ?>
 
+
 <!-- BODY -->
 <!-- slide show -->
 <div id="Main-carousel" class="carousel slide" data-interval="5000" data-bs-ride="carousel">
@@ -714,4 +715,9 @@
 
 <!-- end section comment blog -->
 <!-- load footer -->
-<?php $this->load->view('Footer'); ?>
+<?php 
+  $this->load->view('Footer');
+  $this->load->view('login');
+  $this->load->view('Policy');
+?>
+

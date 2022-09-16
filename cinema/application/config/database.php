@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'cinema-db',
-	'username' => 'admin',
-	'password' => 'admin',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'test',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

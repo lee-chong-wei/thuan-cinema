@@ -5,20 +5,21 @@
   <title><?php echo $Galaxy['title'][0]['title']; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="<?= site_url('/assets/css/Galaxy-style.css') ?>">
+  <link rel="stylesheet" href="http://localhost/Galaxy_cinema/assets/css/Galaxy-style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/b4c4f987a3.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <!-- google tag manager-->
 
-  <script type="text/javascript" src="<?= site_url('/assets/js/Buy_ticket.js') ?>"> </script>
+  <script type="text/javascript" src="http://localhost/Galaxy_cinema/assets/js/Buy_ticket.js"> </script>
+  <script type="text/javascript" src="http://localhost/Galaxy_cinema/assets/js/Login.js"> </script>
   <script>
     var rel = <?= json_encode($Galaxy['cinema_movies_rel']); ?>;
     var cinema = <?= json_encode($Galaxy['cinema']); ?>;
     var movies = <?= json_encode($Galaxy['movies']); ?>;
-    var movie_schedule = <?= json_encode(($Galaxy['movie_schedule_rel'])); ?>;
+    var movie_schedule = <?= json_encode(($Galaxy['movie_schedule_rel'])); ?>; 
   </script>
 </head>
 
@@ -29,8 +30,8 @@
         <div class="row">
           <div class="col-md-4">
             <div class="logo">
-              <a rel="external" href="/Galaxy_cinema/Galaxy_Home">
-                <img src="<?= site_url('/assets/img/galaxy-logo.png') ?>" alt="Galaxy Cinema" width="400px" height="50px">
+              <a rel="external" href="/Galaxy_cinema/Home">
+                <img src="http://localhost/Galaxy_cinema/assets/img/galaxy-logo.png" alt="Galaxy Cinema" width="400px" height="50px">
               </a>
             </div>
           </div>
@@ -48,9 +49,9 @@
           </div>
           <div class="col-md-2">
             <ul class="secondary-nav">
-              <a id="loginlink" rel="external" href="#" onclick="pageLogin()">
+              <a id="loginlink" rel="external" href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                 <i class="fa fa-user"></i>
-                Dang Nhap
+                Log In
               </a>
               <a rel="external" href="/" class="active">VN</a>
               <span>|</span>
